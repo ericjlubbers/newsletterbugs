@@ -1,0 +1,52 @@
+<script type ="text/javascript">
+    document.write('<style type="text/css"> \n\
+        #mj-tease { width:100%; max-width:654px; } \n\
+        #mj-tease .left {width:40%;float:left;} \n\
+        #mj-tease .right {width:60%;float:left;} \n\
+        #mj-tease .mj-form { } \n\
+        #mj-tease .mj-form p { margin: 0; display:block; } \n\
+        #mj-tease .mj-form input[type=text] { width:70%; font-size:0.8em; height:39px; margin:0.1em 0 0 1%; clear:both; padding-left:6px; display:inline-block; float:left; } \n\
+        #mj-tease .mj-form input[type=submit] { width:28%; height:37px; margin:0.1em 0 0 1%; background: #1A4F97; font-family:\'Open Sans\', sans-serif; display:inline-block; text-transform:uppercase; clear:both; border-style:none; color:#ffffff; font-weight:700; } \n\
+        #mj-tease hr { border-style:solid; border-width:1px; color:#1A4F97; } \n\
+        #mj-tease .desc { font-size: 0.9rem; margin:0; padding:0; font-family:\'Open Sans\', sans-serif; font-weight:400; } \n\
+    </style>')
+</script>
+<script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Montserrat:400,700:latin', 'Open+Sans:400,700,700italic,300italic,300:latin' ] }
+};
+(function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+    '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+})(); </script>
+<div id="mj-tease">
+    <div class="left">
+        <p class="desc">Get breaking news alerts and daily news summaries right to your inbox.</p>
+    </div>
+    <div class="right">
+        <div class="mj-form">
+        <form action="http://www.denverpostplus.com/app/mailer" method="post" name="dailydigest" style="margin:0;">
+                <input type="hidden" name="keebler" value="goof111" />
+                <input type="hidden" name="goof111" value="TRUE" />
+                <input type="hidden" name="redirect" id="inputRedirURL" value="" />
+                <input type="hidden" name="id" value="autoadd" />
+                <input type="hidden" name="which" value="dailydigest" />
+                <input type="text" name="name_first" value="Humans: Do Not Use" style="display:none;" />
+                <p style="height:75px;text-align:center;"><input placeholder="Email Address" type="text" name="email_address" maxlength="50" value="" />
+                    <!-- <input type="checkbox"><label>Send me coupons and offers from our local partners.</label><br /> -->
+                    <input type="submit" name="submit" value="Subscribe" />
+                </p>
+                <div class="clear"></div>
+            </form>
+            <script type="text/javascript">
+                document.getElementById('inputRedirURL').value = document.URL;
+            </script>
+            <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+    </div></div>
